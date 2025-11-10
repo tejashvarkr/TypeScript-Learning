@@ -4,5 +4,3 @@
 - Gained Understanding on   assertions,types, type aliases, union and intersection types , keyof operator.
 - Practiced concepts of interfaces,typeguards and narrowing, enums, tuples . top and bottom types, primitive datatypes
 - Explored functions, and its concepts along with implementation of rest parameters,etc
-
- 
