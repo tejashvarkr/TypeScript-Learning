@@ -69,3 +69,52 @@ let rectangle:Rectangle={
   },
 };
 rectangle.calculate_area(rectangle.length,rectangle.breadth);
+
+//Function Overloading
+function add(a:number,b:string):string;
+
+function add(a:string, b:number, c?:string): string;
+    
+
+function add(a:number,...b:number[]):number;
+
+function add(a:any,b:any):any
+{
+ return a+b;
+
+}
+console.log(add(1,2));
+console.log(add("Strin",1));
+
+interface ScreenCoordinate {
+  x: number;
+  y: number;
+}
+interface PrintCoordinate {
+  x: number;
+  y: number;
+}
+function sendToPrinter(pt: PrintCoordinate) {
+
+}
+function getCursorPos(): ScreenCoordinate {
+
+  return { x: 0, y: 0 };
+}
+
+console.log(sendToPrinter(getCursorPos()));
+
+type voidFunc = () => void;
+ 
+const f1: voidFunc = () => {
+  return true;
+};
+ 
+const f2: voidFunc = () => true;
+ 
+const f3: voidFunc = function () {
+  return true;
+};
+f1();
+f2();
+f3();
