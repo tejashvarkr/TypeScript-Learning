@@ -68,3 +68,4 @@ function createInstance<A extends Animal>(c: new () => A): A {
 console.log(createInstance(Lion).keeper.nametag);
 createInstance(Bee).keeper.hasMask;
 console.log(createInstance(Bee).numLegs)
+
