@@ -86,3 +86,35 @@ ping() {
   }
 }
 //Explored extends clause,arrow functions,implements clauses,access modifiers
+abstract class Animal {
+  
+  abstract makeSound(): void;
+  
+  move(): void {
+    console.log("The animal moves...");
+  }
+}
+
+class Dog extends Animal {
+  makeSound(): void {
+    console.log("Woof!");
+  }
+  move():void{
+    console.log("Dog moves with 4 legs waging its tail happily");
+  }
+}
+
+class Cat extends Animal {
+  makeSound(): void {
+    console.log("Meow!");
+  }
+}
+
+
+const dog = new Dog();
+dog.makeSound(); 
+dog.move();     
+
+const cat = new Cat();
+cat.makeSound(); 
+cat.move(); 
